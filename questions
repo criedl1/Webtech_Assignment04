@@ -1,3 +1,4 @@
+EX1
 a) What does the JavaScript Window Object represent and how can it be used?
 The window object represents an open window in a browser.
 If a document contain frames (<iframe> tags), the browser creates one window object for the HTML document, and one additional window object for each frame.
@@ -20,12 +21,19 @@ Verbietet Syntax, die in zukünftigen Versionen von ECMAScript wahrscheinlich de
 
 d) Given the following two JavaScript code snippets, discuss and compare their outputs.
 Beim ersten Snippet ist es mit "var" deklariert und wird im if-block überschrieben.
-
 Beim zweiten Snippet ist es mit "let" deklariert, somit gibt es 2 i, eines innerhalb des if blockes und eines außerhalb.
 
 
 e) Given the following two JavaScript code snippets, discuss and reason about their different outputs.
 Beim ersten scope wird eine globale variable deklariert und die timeouthandler werden mit 1 sekunde erstellt.
 Die schleife läuft 3 mal durch, bevor das erste Console.log(i) aufgerufen wird. Somit ist die Variable immer 3.
-
 Beim zweiten wird die Variable mit let initialisiert, somit wird sie jedem timeouthandler mit anderem wert weitergegeben.
+
+EX2
+
+a) Given following two JavaScript code snippets, discuss and reason about their outputs. What are the functional concepts behind them?
+Die Funktion returned ihre innere Funktion, welche den counter erhöht und returned.
+
+Die Funktion gibt ihre innere Funktion zurück, welche ihre innere Funktion zurückgibt ... in arrow schreibweise.
+
+d) Why do we need closures?

@@ -1,8 +1,14 @@
 function incrementClickCount(){
     var clickCount = 0;
-    return ++clickCount;
+    return function clickcount() {
+        return  ++clickCount;
+    }
+
 }
+
+//um die innerere Funktion rauszuzuzzeln
+let counter = incrementClickCount();
 document.getElementById("myBtn").addEventListener("click",
     function() {
-        alert(incrementClickCount());
+        alert(counter());
     });
