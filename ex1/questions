@@ -1,0 +1,31 @@
+a) What does the JavaScript Window Object represent and how can it be used?
+The window object represents an open window in a browser.
+If a document contain frames (<iframe> tags), the browser creates one window object for the HTML document, and one additional window object for each frame.
+Note: There is no public standard that applies to the Window object, but all major browsers support it.
+
+b) What is the notion of scope in JavaScript?
+Global (überall erreichbar) = zb. var name = 'Ente'
+Local (nur im Scope) = let "wie in java" oder const sind im scope abrufbar.
+
+c) What is the difference between declaring variables with var, let, const or no keyword at all? What happens when 'use strict' is invoked for a script?
+var = globaler scope;
+let = lokaler scope {}
+const = nicht veränderbar;
+
+Der strikte Modus nimmt einige Änderungen an der normalen JavaScript-Semantik vor:
+Ändert einige stille JavaScript Fehler in schwere Fehler.
+Behebt Fehler, die es JavaScript-Engines schwierig machen, Optimierungen durchzuführen: Code im strikten Modus kann manchmal schneller ausgeführt werden als identischer Code, der nicht strikt ist.
+Verbietet Syntax, die in zukünftigen Versionen von ECMAScript wahrscheinlich definiert wird.
+
+
+d) Given the following two JavaScript code snippets, discuss and compare their outputs.
+Beim ersten Snippet ist es mit "var" deklariert und wird im if-block überschrieben.
+
+Beim zweiten Snippet ist es mit "let" deklariert, somit gibt es 2 i, eines innerhalb des if blockes und eines außerhalb.
+
+
+e) Given the following two JavaScript code snippets, discuss and reason about their different outputs.
+Beim ersten scope wird eine globale variable deklariert und die timeouthandler werden mit 1 sekunde erstellt.
+Die schleife läuft 3 mal durch, bevor das erste Console.log(i) aufgerufen wird. Somit ist die Variable immer 3.
+
+Beim zweiten wird die Variable mit let initialisiert, somit wird sie jedem timeouthandler mit anderem wert weitergegeben.
