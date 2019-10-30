@@ -5,6 +5,15 @@ const UNI = {
         "Medical University of Innsbruck",
         "University of Klagenfurt"]};
 
+function makeList(Uni) {
+    let uniList = [];
+    for (let i = 0; i <Uni.names.length ; i++) {
+        //' und " nutzen, dann wird kein escape charakter benötigt
+        uniList.push('<li class="Name">' + Uni.names[i]+"</li>")
+    }
+    return uniList;
+}
+console.log(makeList(UNI));
 
 
 //Funktion output should be:
