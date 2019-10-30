@@ -37,3 +37,4 @@ Die Funktion returned ihre innere Funktion, welche den counter erhöht und retur
 Die Funktion gibt ihre innere Funktion zurück, welche ihre innere Funktion zurückgibt ... in arrow schreibweise.
 
 d) Why do we need closures?
+Do define a scope for Variables...
